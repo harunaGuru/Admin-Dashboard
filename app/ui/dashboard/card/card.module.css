@@ -1,0 +1,37 @@
+.container{
+    background-color: var(--bgSoft);
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.container:hover{
+    background-color: var(--hover);
+}
+.userImage{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.total{
+    font-size: 14px;
+    font-weight: 300;
+}
+.average{
+    font-size: 15px;
+    font-weight: 600;
+}
+.details{
+    font-size: 12px;
+    /* word-spacing: 2px; */
+}
+.positive{
+    color: lime;
+    margin-right: 3px;
+}

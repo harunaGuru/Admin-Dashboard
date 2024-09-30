@@ -1,0 +1,154 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.content{
+    width: 500px;
+    height: 300px;
+    /* background-color: var(--bg); */
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+.socials{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+.form{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border-radius: 20px; */
+    padding: 10px;
+    /* transform: translateX(100%); */
+}
+
+
+.signin{
+    z-index: 3;
+    /* background-color: var(--hover); */
+    background-color: #eee;
+    color: var(--textSoft);
+    left: 0;
+
+}
+.active .signin{
+    transform: translateX(100%);
+}
+.signup{
+    z-index: 1;
+    background-color: #eee;
+    opacity: 0;
+    left: 0;
+    color: #231a1a;
+}
+.content.active .signup{
+    transform: translateX(100%);
+    z-index: 5;
+    opacity: 1;
+    animation: animate 0.6s; 
+}
+@keyframes animate {
+    0%, 49.99%{
+        z-index: 1;
+        opacity: 0;
+    }
+    50%, 100%{
+        z-index: 5;
+        opacity: 1;
+    }
+}
+.input{
+    padding: 10px;
+    border: none;
+    /* cursor: pointer; */
+    /* background-color: Var(--bgSoft); */
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+.btn{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bg);
+    width: 100%;
+    border-radius: 5px;
+    color: var(--text);
+}
+
+.toggleContainer{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 100;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+.content.active .toggleContainer{
+    transform: translateX(-100%);
+    
+}
+.toggle{
+    position: relative;
+    height: 100%;
+    width: 200%;
+    left: -100%;
+    background-color: crimson;
+    transform: translateX(0); 
+    transition: all 0.6s ease-in-out;
+}
+.content.active .toggle{
+    transform: translateX(50%);
+}
+.toggleForm{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    align-items: center;
+    color: var(--text);
+    transform: translateX(0);
+    /* transition: all 0.6s ease-in-out; */
+
+}
+.email{
+    right: 0;
+    transform: translateX(0);
+}
+.password{ 
+    transform: translateX(-200%);
+}
+.content.active .password{
+    transform: translateX(0);
+    
+}
+.toggleForm h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

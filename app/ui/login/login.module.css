@@ -1,0 +1,41 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background-color: var(--bgSoft);
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    height: 250px;
+}
+.heading{
+    font-size: 16px;
+    color: var(--text);
+    justify-content: center;
+    display: flex;
+
+}
+.input{
+    width:100%;
+    padding: 9px;
+    border-radius: 5px;
+    background-color: var(--bg);
+    border: 1px solid var(--hover);
+    color: var(--text);
+    /* cursor: pointer; */
+}
+.btn{
+    width: 100%;
+    padding: 9px;
+    border: none;
+    background-color: teal;
+    color: var(--text);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
