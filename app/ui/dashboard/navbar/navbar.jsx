@@ -2,6 +2,7 @@
 import { usePathname } from 'next/navigation';
 import styles from './navbar.module.css'
 
+
 // import { MdNotifications,  } from "react-icons/md";
 import { MdNotifications, MdPublic, MdSearch, MdOutline3P } from "react-icons/md";
 const Navbar = () => {

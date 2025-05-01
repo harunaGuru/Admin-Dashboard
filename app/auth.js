@@ -29,7 +29,7 @@ export const { auth, signIn, signOut } = NextAuth({
             return null
         }
     }
-  })],
+  })], 
     callbacks: {
         async jwt({ token, user }) {
         if (user) {

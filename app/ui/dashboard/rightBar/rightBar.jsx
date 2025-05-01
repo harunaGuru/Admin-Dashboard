@@ -16,7 +16,7 @@ const CardSection = ()=>{
     return(
         <div className={styles.wrapper}>
           <div className={styles.image}>
-            <Image src="/astronaut.png" fill className={styles.cardImage} />
+            <Image alt="noavatar"  src="/astronaut.png" fill className={styles.cardImage} />
           </div>
           <div className={styles.text}>
             <span className={styles.notification}>🔥 Available Now</span>

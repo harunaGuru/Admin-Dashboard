@@ -18,7 +18,7 @@ const Transaction = () => {
           <tr>
             <td> 
               <div className={styles.imgContainer}>
-                <Image src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
+                <Image alt="noavatar" src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
                 John Doe
               </div>
               </td>
@@ -29,7 +29,7 @@ const Transaction = () => {
           <tr>
             <td>
             <div className={styles.imgContainer}>
-                <Image src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
+                <Image alt="noavatar"  src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
                 John Doe
               </div>
             </td>
@@ -40,7 +40,7 @@ const Transaction = () => {
           <tr>
             <td>
             <div className={styles.imgContainer}>
-                <Image src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
+                <Image alt="noavatar"  src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
                 John Doe
               </div>
             </td>
@@ -51,7 +51,7 @@ const Transaction = () => {
           <tr>
             <td>
             <div className={styles.imgContainer}>
-                <Image src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
+                <Image alt="noavatar"  src="/noavatar.png" height={30} width={30} className={styles.userImage}/>
                 John Doe
               </div>
             </td>
