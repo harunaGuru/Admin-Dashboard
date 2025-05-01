@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import styles from './card.module.css'
 import { MdSupervisedUserCircle } from "react-icons/md";
 
