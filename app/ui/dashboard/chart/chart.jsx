@@ -1,6 +1,6 @@
 "use client"
 import styles from './chart.module.css'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 const data = [
     {
         name: "Sun",
@@ -55,7 +55,6 @@ const Chart = () => {
             bottom: 5,
           }}
         >
-          {/* <CartesianGrid strokeDasharray="3 3" /> */}
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip contentStyle={{background:"#151c2c", border:"none"}} />
